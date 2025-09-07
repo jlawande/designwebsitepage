@@ -1188,9 +1188,9 @@ background-color: green;
 }
 
 @media (max-width: 992px) {
-body{
+/*body{
 bfont-family: 'Montserrat', sans-serif;
-  }
+  }*/
 
 
   .sec-7-para-1{
@@ -1276,9 +1276,9 @@ bfont-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
-  body{
+ /* body{
 font-family: 'Montserrat', sans-serif;
-  }
+  }*/
   .sec-7-para-1{
     font-weight: 600;
   }
@@ -1394,9 +1394,9 @@ font-family: 'Montserrat', sans-serif;
 @media (max-width: 576px) {
   /*container-1*/
   /*subcontainer-2*/
-  body{
+  /*body{
 font-family: 'Montserrat', sans-serif;
-  }
+  }*/
   .sec-7-para-1{
     font-weight: 600;
   }
@@ -1529,9 +1529,9 @@ display:none;
 }
 
 @media (max-width: 375px) {
-  body{
+  /*body{
 font-family: 'Montserrat', sans-serif;
-  }
+  }*/
   .sec-7-para-1{
     font-weight: 600;
   }
