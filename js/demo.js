@@ -38,11 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const moodImage = document.getElementById('moodImage');
 
   const moodData = {
-    "very-happy": { text: "Very Happy", img: "assets/images/veryhappy-big.png" },
-    "happy": { text: "Happy", img: "assets/images/happy-big.png" },
-    "sad": { text: "Sad", img: "assets/images/sad-big.png" },
-    "neutral": { text: "Neutral", img: "assets/images/neutral-big.png" },
-    "very-sad": { text: "Very Sad", img: "assets/images/verysad-big.png" }
+    "very-happy": { text: "Very Happy", img: "images/veryhappy-big.png" },
+    "happy": { text: "Happy", img: "images/happy-big.png" },
+    "sad": { text: "Sad", img: "images/sad-big.png" },
+    "neutral": { text: "Neutral", img: "images/neutral-big.png" },
+    "very-sad": { text: "Very Sad", img: "images/verysad-big.png" }
   };
 
   if (logMoodBtn) {
