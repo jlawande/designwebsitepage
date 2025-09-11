@@ -609,14 +609,19 @@ padding-bottom: 10px;
 }
 
 @media (max-width: 992px){
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: green;
+  }
 
   .inv-hidden-message {
     width: 80% !important;
   }
 
-  .popup-overlay{
-    padding-top: 25%;
-    padding-bottom: 25%;
+  .popup-box{
+    margin-top: 25%;
+    margin-bottom: 25%;
   }
 
 }
