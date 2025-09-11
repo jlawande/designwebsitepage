@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    
+
+  </script>
+  
+</head>
+<body>
+<section class="inv-container-1">
+  <div class="inv-mainsec-1">
+    <div class="inv-subsec-1">
+        <img src="images/logo.svg" alt="Logo" />
+      <p class="p1">Mood tracker</p>
+    </div>
+    
+    <div class="inv-subsec-2">
+      <img src="images/profile.svg" alt="Profile">
+      <span class="arrow">&#x2335;</span>
+    </div>
+    
+  </div>
+</section>
+<section class="inv-container-1">
+  <div class="inv-mainsec-2">
+      <div class="inv-subsec-3">
+      <span style="color:#4762d7; font-size: 2rem; font-weight: 600;">Hello, Lisa</span>
+      <h1 style="color:#1e2248; font-size: 2.5rem; forn-weight:500;">How are you feeling today?</h1>
+      <span>Wednesday, April 16th, 2025</span>
+    </div>
+  </div>
+  <div class="inv-hidden-message">
+    <div class="inv-hidden-message">
+      <div class="inv-hidden-mainmessage">
+      <div class="inv-hidden-message-1" id="hiddenMessage">
+        <span style="color:#646382; font-size:1.5rem; font-weight: 600;">I am feeling</span>
+        <h3 id="moodText" style="color:#1e2248; font-size:1.5rem; font-weight: 600;"></h3>
+        <img src="images/doubleqoutes.svg" alt="Logo" class="dbleqtes" />
+        <p style="color: #232137; font-size: 0.9rem; font-weight: 500; font-style: italic; padding-bottom: 50px;">"when your heart is full, share your light with the world"</p>
+        <div class="inv-subsec-1">
+        <img src="images/zzz.svg" alt="Logo" />
+      <p class="p1">Sleep</p>
+    </div>
+    <p style="color:#1e2248; font-size:1.5rem; font-weight: 600; padding-top: 25px;">9+ hours</p>
+  </div>
+  <div class="inv-hidden-message-2" id="hiddenMessagimg">
+    <img id="moodImage" src="" class="responsive-img" alt="Profile">
+  </div>
+</div>
+  </div>
+  </div>
+  <div class="inv-mainsec-3">
+      <div class="inv-subsec-4">
+      <button class="log-btn">Log today's mood</button>
+    </div>
+  </div>
+</section>
+<section class="inv-container-1">
+  <div class="inv-mainsec-4">
+    <div class="inv-mainsec-4a">
+    <div class="inv-subsec-5" >
+      <span style="color:#1d1c3e; font-size: 1rem; font-weight: 600;">Average Mood</span><span style="color:#868595; font-size: 1rem; font-weight: 500;">(Last 5 check-ins)</span>
+    </div>
+    <div class="inv-subsec-6" style="background-image: url('assets/images/blue-rect.png'); background-repeat: no-repeat; background-size: cover; background-position: center center; width: width:100%; min-height:135px; border-radius:15px;">
+      <div class="card">
+         <div class="inv-subsec-5a">
+        <span><img src="images/blue.png" alt="Profile"></span><span style="font-size:1rem; font-weight:600; color: #131e4c;">Neutral</span>
+      </div>
+      <div class="inv-subsec-5a">
+      <span style="font-size:0.8rem; font-weight:500; color: #131e4c;">&#129122; Same as the previous 5 check-ins</span>
+    </div>
+  
+  
+</div>
+      <!-- <div class="half-circle first"></div>
+  <div class="half-circle second"></div> -->
+    </div>
+    <div class="inv-subsec-5">
+      <span style="color:#1d1c3e; font-size: 1rem; font-weight: 600;">Average Mood</span><span style="color:#868595; font-size: 1rem; font-weight: 500;">(Last 5 check-ins)</span>
+    </div>
+    <div class="inv-subsec-6" style="background-image: url('assets/images/purple-rect.png'); background-repeat: no-repeat; background-size: cover; background-position: center center; width: width:100%; min-height:135px; border-radius:15px;">
+      <div class="card">
+         <div class="inv-subsec-5a">
+        <span><img src="images/zzz-blue.svg" alt="Logo" /></span><span style="color:#fff; font-weight: 500; font-size: 2rem;">5-6 Hours</span>
+      </div>
+      <div class="inv-subsec-5a">
+      <span style="font-size:0.8rem; font-weight:500; color: #a1baf3;"><span style="display:inline-block; transform: rotate(-40deg);">&#129122;</span> Increase from the previous 5 check-ins</span>
+    </div>  
+</div>
+      
+    </div>
+  </div>
+
+  <div class="inv-mainsec-6" style="background-color: white;">
+   <div class="inv-submainsec-6">
+    <div class="inv-submainsec-6a">
+      <span class="mood-and-sleep">Mood and sleep trends</span>
+   </div>
+   <div class="inv-submainsec-6b">
+    <div class="chart-wrapper">
+  <div class="chart-container">
+    <!-- Left side scale -->
+    <div class="scale">
+      <div>9+ hours</div>
+      <div>3-4 hours</div>
+      <div>5-6 hours</div>
+      <div>7-8 hours</div>
+      <div>0-2 hours</div>
+    </div>
+
+    <!-- Bars -->
+    <div class="bars">
+      <div class="bars-wrapper-1">
+      <div class="bar sad" style="--target-height:60%">
+        <div class="bar-content"><img src="images/purple.png" alt="sad"></div>
+      </div>
+      <div class="bar happy" style="--target-height:80%">
+        <div class="bar-content"><img src="images/green.png" alt="happy"></div>
+      </div>
+
+      <div class="bar verysad" style="--target-height:40%">
+        <div class="bar-content"><img src="images/pink.png" alt="very sad"></div>
+      </div>
+
+      <div class="bar sad" style="--target-height:60%">
+        <div class="bar-content"><img src="images/blue.png" alt="sad"></div>
+      </div>
+
+      <div class="bar neutral" style="--target-height:70%">
+        <div class="bar-content"><img src="images/blue.png" alt="neutral"></div>
+      </div>
+
+      <div class="bar sad" style="--target-height:60%">
+        <div class="bar-content"><img src="images/purple.png" alt="sad"></div>
+      </div>
+
+      <div class="bar happy" style="--target-height:80%">
+        <div class="bar-content"><img src="images/green.png" alt="happy"></div>
+        <!--  -->
+      </div>
+
+      <div class="bar veryhappy" style="--target-height:100%">
+        <div class="bar-content"><img src="images/yellow.png" alt="very happy"></div>
+        <!--  -->
+      </div>
+
+      <div class="bar sad" style="--target-height:60%">
+        <div class="bar-content"><img src="images/purple.png" alt="sad"></div>
+        <!--  -->
+      </div>
+
+      <div class="bar neutral" style="--target-height:70%">
+        <div class="bar-content"><img src="images/blue.png" alt="neutral"></div>
+        <!--  -->
+      </div>
+
+      <div class="bar happy" style="--target-height:80%">
+        <div class="bar-content"><img src="images/green.png" alt="happy"></div>
+        <!--  -->
+      </div>
+    
+
+    </div>
+    <div class="dates-wrapper">
+     <span class="date">March 31</span>
+     <span class="date">April 02</span>
+     <span class="date">April 04</span>
+     <span class="date">April 06</span>
+     <span class="date">April 07</span>
+     <span class="date">April 09</span>
+     <span class="date">April 10</span>
+     <span class="date">April 12</span>
+     <span class="date">April 13</span>
+     <span class="date">April 14</span>
+     <span class="date">April 15</span>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+   </div>
+   </div>
+</div>
+</div>
+
+</section>
+<!-- Popup Modal -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+     <div class="popup-box-subsec-1">
+    <span class="close-btn" id="closePopup">&times;</span>
+  </div>
+    <div class="popup-box-mainsec-1">
+      <div class="popup-box-sec-1">
+       
+    <div class="popup-box-subsec-2">
+    <h2 class="head-2">Log your mood</h2>
+  </div>
+    <div class="popup-box-subsec-5">
+   <hr class="mood-hr">
+  <hr class="mood-hr">
+  <hr class="mood-hr">
+  <hr class="mood-hr"> 
+</div>
+    <div class="popup-box-subsec-2">
+    <h3 class="head3">How was your mood today</h3>
+  </div>
+
+  <div class="popup-box-subsec-4">
+    <div class="popup-box-subsec-4a">
+  <label class="mood-option">
+    <input type="radio" name="mood" value="very-happy">
+    <span class="mood-content">
+      <span class="mood-text">Very Happy</span>
+    </span>
+    <img src="images/veryhappy.png" alt="Very Happy" class="smiley shake responsive-img">
+  </label>
+</div>
+
+<div class="popup-box-subsec-4a">
+  <label class="mood-option">
+    <input type="radio" name="mood" value="happy">
+    <span class="mood-content">
+      <span class="mood-text">Happy</span>
+    </span>
+    <img src="images/happy.png" alt="Happy" class="smiley spin responsive-img">
+  </label>
+</div>
+
+<div class="popup-box-subsec-4a">
+  <label class="mood-option">
+    <input type="radio" name="mood" value="sad">
+    <span class="mood-content">
+      <span class="mood-text">Neutral</span>
+    </span>
+    <img src="images/neutral.png" alt="Sad" class="smiley fade responsive-img">
+  </label>
+</div>
+
+<div class="popup-box-subsec-4a">
+  <label class="mood-option">
+    <input type="radio" name="mood" value="angry">
+    <span class="mood-content">
+      <span class="mood-text">Sad</span>
+    </span>
+    <img src="images/sad.png" alt="Angry" class="smiley gentleFrown responsive-img">
+  </label>
+</div>
+
+<div class="popup-box-subsec-4a">
+  <label class="mood-option">
+    <input type="radio" name="mood" value="angry">
+    <span class="mood-content">
+      <span class="mood-text">Very Sad</span>
+    </span>
+    <img src="images/verysad.png" alt="Angry" class="smiley scowl responsive-img">
+  </label>
+</div>
+
+  </div>
+ 
+    <div class="popup-box-subsec-6">
+    <button class="log-btn" id="log-clik" style="width:100%;">Continue</button>
+  </div>
+    </div>
+    </div>
+   
+  </div>
+</div>
+<div style="height:20px"></div>
+<script src="js/demo.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>
